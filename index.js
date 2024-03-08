@@ -8,8 +8,7 @@ const app = express();
 app.use(
   cors({
     origin: "https://necxis.vercel.app/",
-    methods: ["GET", "POST"],
-    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
   })
 );
 
@@ -17,9 +16,6 @@ const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
     origin: "https://necxis.vercel.app/",
-    methods: ["GET", "POST"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true,
   },
 });
 
