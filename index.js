@@ -44,8 +44,6 @@ io.on("connection", (socket) => {
   });
 });
 
-// Add routes for uploading photos, getting posts, etc.
-
 server.listen(5000, () => {
   console.log("Server running on port 5000");
 });
