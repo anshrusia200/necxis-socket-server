@@ -15,7 +15,7 @@ app.use(
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "https://necxis.vercel.app/",
+    origin: "https://necxis.vercel.app",
   },
 });
 
